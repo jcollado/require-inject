@@ -21,7 +21,7 @@ test('mock with relative path', function (t) {
   t.plan(1)
 
   var a = requireInject('./lib/a', {
-    './lib/b': function (infile, outfile, cb) {
+    './test/lib/b': function (infile, outfile, cb) {
       cb()
     }
   })
